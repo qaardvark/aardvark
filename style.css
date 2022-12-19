@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  align-items: center;
 }
 
 a {
@@ -23,41 +22,6 @@ body {
 
 ::-webkit-scrollbar {
     width: 0px;
-}
-
-main {
-  width: min(100vw, 50em);
- 
-  display: grid;
-  place-content: center;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 3rem;
-}
-
-main>a {
-  height: 80%;
-  transition: 0.1s;
-}
-
-main>a:hover {
-  scale: 1.1;
-}
-
-main :is(figure, figcaption) {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  gap: 0.8em;
-
-}
-
-main figure {
-  height: 100%;
-  padding: 2em;
-  border-radius: 1rem;
-  background-color: white;
-  box-shadow: 0 0 0.4rem 0.1rem #0003;
-  text-align: center;
 }
 
 ul {
@@ -98,4 +62,25 @@ h3{
 .info {
   font-size: 150%;
   
+}
+
+a:link {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(82, 82, 82);
+  background-color: transparent;
+  text-decoration: bold;
+}
+
+a:active {
+  background-color: transparent;
+  text-decoration: none;
 }
